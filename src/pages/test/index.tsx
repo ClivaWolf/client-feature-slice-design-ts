@@ -1,8 +1,12 @@
 import Button from "shared/ui/button";
+import Selector from "shared/ui/selector";
 
 const TestPage = () => {
     return (
-        <Button onClick={() => alert('test')}>Test</Button>
+        <div className="m-auto bg-pc flex justify-center">
+            <Button onClick={() => alert('test')}>Test</Button>
+            <Selector options={['dark', 'light','neon'] } onChange={(value) => console.log(value)}></Selector>
+        </div>
     );
 };
 

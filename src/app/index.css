@@ -15,6 +15,13 @@
     --text: rgb(58, 58, 58);
     --text-dark: rgb(36, 36, 36);
     --text-light: rgb(117, 117, 117);
+
+    --border-radius: 15px;
+    --border-radius-sm: 5px;
+    --border-radius-lg: 25px;
+
+    --shadow-primary: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    --shadow-accent: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
   }
 
   body[data-theme='dark'] {
