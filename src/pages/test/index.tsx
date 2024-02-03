@@ -1,11 +1,13 @@
-import Button from "shared/ui/button";
-import Selector from "shared/ui/selector";
+import { Button, Space } from 'antd'
+import { ThemeSelector } from 'features/themeSwitcher';
 
 const TestPage = () => {
     return (
         <div className="m-auto bg-pc flex justify-center">
-            <Button onClick={() => alert('test')}>Test</Button>
-            <Selector options={['dark', 'light','neon'] } onChange={(value) => console.log(value)}></Selector>
+            <Space>
+                <Button type="primary">Test</Button>
+                <ThemeSelector/>
+            </Space>
         </div>
     );
 };
